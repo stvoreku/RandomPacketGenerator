@@ -1,7 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
-LAMBDA = 4
-PAC_NUM_1 = 100
+
+LAMBDA = 2
+PAC_NUM_1 = 200
 PAC_NUM_2 = 200
 
 k1 = np.random.poisson(LAMBDA, PAC_NUM_1)
