@@ -15,8 +15,8 @@ b1 = 4
 b2 = 4
 Q1 = 0
 Q2 = 0
-Q1delta = 0.15
-Q2delta = 0.6
+Q1delta = 0.2
+Q2delta = 0.8
 Q1sent = {}
 Q2sent = {}
 allsent_Q1 = 0
@@ -40,7 +40,7 @@ for num in range(0, 500):
             if sending == 0:
                 sending = bufor_1[0]
                 bufor_1.pop(0)
-                Q1 = 0
+                Q1 -= b1
                 allsent_Q1 += 1
                 Q1sent[num] = allsent_Q1 / (allsent_Q1 + allsent_Q2)
                 print(allsent_Q1 / (allsent_Q1 + allsent_Q2))
@@ -51,7 +51,7 @@ for num in range(0, 500):
             if sending == 0:
                 sending = bufor_2[0]
                 bufor_2.pop(0)
-                Q2 = 0
+                Q2 -=b2
                 allsent_Q2 += 1
                 Q2sent[num] = allsent_Q2 / (allsent_Q1 + allsent_Q2)
                 print(allsent_Q2 / (allsent_Q1 + allsent_Q2))
