@@ -1,0 +1,907 @@
+"C:\Program Files\Java\jdk-12.0.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.3\lib\idea_rt.jar=52980:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.1.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\macie\Desktop\EarliestDueDate\out\production\EarliestDueDate Main
+-------
+649
+613
+-------
+0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 
+0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 
+6
+10
+16
+20
+25
+31
+37
+45
+50
+56
+60
+67
+73
+78
+83
+87
+91
+96
+102
+109
+116
+123
+126
+134
+139
+147
+156
+164
+167
+172
+181
+187
+191
+198
+202
+211
+217
+224
+234
+248
+254
+260
+263
+271
+277
+290
+300
+306
+312
+320
+329
+338
+343
+347
+353
+361
+366
+373
+381
+390
+401
+407
+416
+423
+424
+433
+439
+442
+448
+457
+464
+470
+478
+486
+494
+498
+505
+512
+518
+521
+524
+532
+537
+542
+548
+555
+561
+568
+575
+581
+587
+595
+600
+608
+615
+625
+631
+636
+642
+648
+
+
+6
+12
+20
+25
+33
+39
+46
+51
+57
+63
+67
+76
+82
+88
+96
+98
+104
+112
+118
+122
+126
+132
+140
+145
+151
+156
+163
+166
+170
+181
+190
+193
+200
+207
+211
+217
+227
+230
+239
+249
+254
+260
+269
+273
+280
+283
+289
+297
+302
+305
+310
+313
+322
+328
+338
+344
+351
+356
+363
+367
+373
+382
+387
+395
+404
+407
+412
+418
+426
+429
+434
+446
+454
+459
+467
+475
+478
+480
+488
+491
+499
+502
+508
+514
+518
+523
+528
+531
+537
+542
+547
+558
+570
+575
+582
+586
+591
+600
+605
+612
+
+
+100
+100
+obecny czas to: 0 ms 
+obecny czas to: 1 ms 
+obecny czas to: 2 ms 
+obecny czas to: 3 ms 
+obecny czas to: 4 ms 
+obecny czas to: 5 ms 
+obecny czas to: 6 ms  Rozpoczecie obslugi pakietu i: 1.0 j: 1.0
+obecny czas to: 7 ms 
+obecny czas to: 8 ms 
+obecny czas to: 9 ms 
+obecny czas to: 10 ms  Obsluzono pakiet i: 1.0 j: 1.0 Rozpoczecie obslugi pakietu i: 2.0 j: 1.0
+obecny czas to: 11 ms 
+obecny czas to: 12 ms 
+obecny czas to: 13 ms 
+obecny czas to: 14 ms  Obsluzono pakiet i: 2.0 j: 1.0 Rozpoczecie obslugi pakietu i: 1.0 j: 2.0
+obecny czas to: 15 ms 
+obecny czas to: 16 ms 
+obecny czas to: 17 ms 
+obecny czas to: 18 ms  Obsluzono pakiet i: 1.0 j: 2.0 Rozpoczecie obslugi pakietu i: 2.0 j: 2.0
+obecny czas to: 19 ms 
+obecny czas to: 20 ms 
+obecny czas to: 21 ms 
+obecny czas to: 22 ms  Obsluzono pakiet i: 2.0 j: 2.0 Rozpoczecie obslugi pakietu i: 1.0 j: 3.0
+obecny czas to: 23 ms 
+obecny czas to: 24 ms 
+obecny czas to: 25 ms 
+obecny czas to: 26 ms  Obsluzono pakiet i: 1.0 j: 3.0 Rozpoczecie obslugi pakietu i: 1.0 j: 4.0
+obecny czas to: 27 ms 
+obecny czas to: 28 ms 
+obecny czas to: 29 ms 
+obecny czas to: 30 ms  Obsluzono pakiet i: 1.0 j: 4.0 Rozpoczecie obslugi pakietu i: 2.0 j: 3.0
+obecny czas to: 31 ms 
+obecny czas to: 32 ms 
+obecny czas to: 33 ms 
+obecny czas to: 34 ms  Obsluzono pakiet i: 2.0 j: 3.0 Rozpoczecie obslugi pakietu i: 1.0 j: 5.0
+obecny czas to: 35 ms 
+obecny czas to: 36 ms 
+obecny czas to: 37 ms 
+obecny czas to: 38 ms  Obsluzono pakiet i: 1.0 j: 5.0 Rozpoczecie obslugi pakietu i: 2.0 j: 4.0
+obecny czas to: 39 ms 
+obecny czas to: 40 ms 
+obecny czas to: 41 ms 
+obecny czas to: 42 ms  Obsluzono pakiet i: 2.0 j: 4.0 Rozpoczecie obslugi pakietu i: 1.0 j: 6.0
+obecny czas to: 43 ms 
+obecny czas to: 44 ms 
+obecny czas to: 45 ms 
+obecny czas to: 46 ms  Obsluzono pakiet i: 1.0 j: 6.0 Rozpoczecie obslugi pakietu i: 2.0 j: 5.0
+obecny czas to: 47 ms 
+obecny czas to: 48 ms 
+obecny czas to: 49 ms 
+obecny czas to: 50 ms  Obsluzono pakiet i: 2.0 j: 5.0 Rozpoczecie obslugi pakietu i: 1.0 j: 7.0
+obecny czas to: 51 ms 
+obecny czas to: 52 ms 
+obecny czas to: 53 ms 
+obecny czas to: 54 ms  Obsluzono pakiet i: 1.0 j: 7.0 Rozpoczecie obslugi pakietu i: 2.0 j: 6.0
+obecny czas to: 55 ms 
+obecny czas to: 56 ms 
+obecny czas to: 57 ms 
+obecny czas to: 58 ms  Obsluzono pakiet i: 2.0 j: 6.0 Rozpoczecie obslugi pakietu i: 1.0 j: 8.0
+obecny czas to: 59 ms 
+obecny czas to: 60 ms 
+obecny czas to: 61 ms 
+obecny czas to: 62 ms  Obsluzono pakiet i: 1.0 j: 8.0 Rozpoczecie obslugi pakietu i: 2.0 j: 7.0
+obecny czas to: 63 ms 
+obecny czas to: 64 ms 
+obecny czas to: 65 ms 
+obecny czas to: 66 ms  Obsluzono pakiet i: 2.0 j: 7.0 Rozpoczecie obslugi pakietu i: 1.0 j: 9.0
+obecny czas to: 67 ms 
+obecny czas to: 68 ms 
+obecny czas to: 69 ms 
+obecny czas to: 70 ms  Obsluzono pakiet i: 1.0 j: 9.0 Rozpoczecie obslugi pakietu i: 2.0 j: 8.0
+obecny czas to: 71 ms 
+obecny czas to: 72 ms 
+obecny czas to: 73 ms 
+obecny czas to: 74 ms  Obsluzono pakiet i: 2.0 j: 8.0 Rozpoczecie obslugi pakietu i: 1.0 j: 10.0
+obecny czas to: 75 ms 
+obecny czas to: 76 ms 
+obecny czas to: 77 ms 
+obecny czas to: 78 ms  Obsluzono pakiet i: 1.0 j: 10.0 Rozpoczecie obslugi pakietu i: 2.0 j: 9.0
+obecny czas to: 79 ms 
+obecny czas to: 80 ms 
+obecny czas to: 81 ms 
+obecny czas to: 82 ms  Obsluzono pakiet i: 2.0 j: 9.0 Rozpoczecie obslugi pakietu i: 1.0 j: 11.0
+obecny czas to: 83 ms 
+obecny czas to: 84 ms 
+obecny czas to: 85 ms 
+obecny czas to: 86 ms  Obsluzono pakiet i: 1.0 j: 11.0 Rozpoczecie obslugi pakietu i: 2.0 j: 10.0
+obecny czas to: 87 ms 
+obecny czas to: 88 ms 
+obecny czas to: 89 ms 
+obecny czas to: 90 ms  Obsluzono pakiet i: 2.0 j: 10.0 Rozpoczecie obslugi pakietu i: 1.0 j: 12.0
+obecny czas to: 91 ms 
+obecny czas to: 92 ms 
+obecny czas to: 93 ms 
+obecny czas to: 94 ms  Obsluzono pakiet i: 1.0 j: 12.0 Rozpoczecie obslugi pakietu i: 2.0 j: 11.0
+obecny czas to: 95 ms 
+obecny czas to: 96 ms 
+obecny czas to: 97 ms 
+obecny czas to: 98 ms  Obsluzono pakiet i: 2.0 j: 11.0 Rozpoczecie obslugi pakietu i: 1.0 j: 13.0
+obecny czas to: 99 ms 
+obecny czas to: 100 ms 
+obecny czas to: 101 ms 
+obecny czas to: 102 ms  Obsluzono pakiet i: 1.0 j: 13.0 Rozpoczecie obslugi pakietu i: 2.0 j: 12.0
+obecny czas to: 103 ms 
+obecny czas to: 104 ms 
+obecny czas to: 105 ms 
+obecny czas to: 106 ms  Obsluzono pakiet i: 2.0 j: 12.0 Rozpoczecie obslugi pakietu i: 1.0 j: 14.0
+obecny czas to: 107 ms 
+obecny czas to: 108 ms 
+obecny czas to: 109 ms 
+obecny czas to: 110 ms  Obsluzono pakiet i: 1.0 j: 14.0 Rozpoczecie obslugi pakietu i: 2.0 j: 13.0
+obecny czas to: 111 ms 
+obecny czas to: 112 ms 
+obecny czas to: 113 ms 
+obecny czas to: 114 ms  Obsluzono pakiet i: 2.0 j: 13.0 Rozpoczecie obslugi pakietu i: 1.0 j: 15.0
+obecny czas to: 115 ms 
+obecny czas to: 116 ms 
+obecny czas to: 117 ms 
+obecny czas to: 118 ms  Obsluzono pakiet i: 1.0 j: 15.0 Rozpoczecie obslugi pakietu i: 1.0 j: 16.0
+obecny czas to: 119 ms 
+obecny czas to: 120 ms 
+obecny czas to: 121 ms 
+obecny czas to: 122 ms  Obsluzono pakiet i: 1.0 j: 16.0 Rozpoczecie obslugi pakietu i: 2.0 j: 14.0
+obecny czas to: 123 ms 
+obecny czas to: 124 ms 
+obecny czas to: 125 ms 
+obecny czas to: 126 ms  Obsluzono pakiet i: 2.0 j: 14.0 Rozpoczecie obslugi pakietu i: 1.0 j: 17.0
+obecny czas to: 127 ms 
+obecny czas to: 128 ms 
+obecny czas to: 129 ms 
+obecny czas to: 130 ms  Obsluzono pakiet i: 1.0 j: 17.0 Rozpoczecie obslugi pakietu i: 1.0 j: 18.0
+obecny czas to: 131 ms 
+obecny czas to: 132 ms 
+obecny czas to: 133 ms 
+obecny czas to: 134 ms  Obsluzono pakiet i: 1.0 j: 18.0 Rozpoczecie obslugi pakietu i: 2.0 j: 15.0
+obecny czas to: 135 ms 
+obecny czas to: 136 ms 
+obecny czas to: 137 ms 
+obecny czas to: 138 ms  Obsluzono pakiet i: 2.0 j: 15.0 Rozpoczecie obslugi pakietu i: 2.0 j: 16.0
+obecny czas to: 139 ms 
+obecny czas to: 140 ms 
+obecny czas to: 141 ms 
+obecny czas to: 142 ms  Obsluzono pakiet i: 2.0 j: 16.0 Rozpoczecie obslugi pakietu i: 1.0 j: 19.0
+obecny czas to: 143 ms 
+obecny czas to: 144 ms 
+obecny czas to: 145 ms 
+obecny czas to: 146 ms  Obsluzono pakiet i: 1.0 j: 19.0 Rozpoczecie obslugi pakietu i: 2.0 j: 17.0
+obecny czas to: 147 ms 
+obecny czas to: 148 ms 
+obecny czas to: 149 ms 
+obecny czas to: 150 ms  Obsluzono pakiet i: 2.0 j: 17.0 Rozpoczecie obslugi pakietu i: 1.0 j: 20.0
+obecny czas to: 151 ms 
+obecny czas to: 152 ms 
+obecny czas to: 153 ms 
+obecny czas to: 154 ms  Obsluzono pakiet i: 1.0 j: 20.0 Rozpoczecie obslugi pakietu i: 2.0 j: 18.0
+obecny czas to: 155 ms 
+obecny czas to: 156 ms 
+obecny czas to: 157 ms 
+obecny czas to: 158 ms  Obsluzono pakiet i: 2.0 j: 18.0 Rozpoczecie obslugi pakietu i: 1.0 j: 21.0
+obecny czas to: 159 ms 
+obecny czas to: 160 ms 
+obecny czas to: 161 ms 
+obecny czas to: 162 ms  Obsluzono pakiet i: 1.0 j: 21.0 Rozpoczecie obslugi pakietu i: 2.0 j: 19.0
+obecny czas to: 163 ms 
+obecny czas to: 164 ms 
+obecny czas to: 165 ms 
+obecny czas to: 166 ms  Obsluzono pakiet i: 2.0 j: 19.0 Rozpoczecie obslugi pakietu i: 2.0 j: 20.0
+obecny czas to: 167 ms 
+obecny czas to: 168 ms 
+obecny czas to: 169 ms 
+obecny czas to: 170 ms  Obsluzono pakiet i: 2.0 j: 20.0 Rozpoczecie obslugi pakietu i: 1.0 j: 22.0
+obecny czas to: 171 ms 
+obecny czas to: 172 ms 
+obecny czas to: 173 ms 
+obecny czas to: 174 ms  Obsluzono pakiet i: 1.0 j: 22.0 Rozpoczecie obslugi pakietu i: 1.0 j: 23.0
+obecny czas to: 175 ms 
+obecny czas to: 176 ms 
+obecny czas to: 177 ms 
+obecny czas to: 178 ms  Obsluzono pakiet i: 1.0 j: 23.0 Rozpoczecie obslugi pakietu i: 2.0 j: 21.0
+obecny czas to: 179 ms 
+obecny czas to: 180 ms 
+obecny czas to: 181 ms 
+obecny czas to: 182 ms  Obsluzono pakiet i: 2.0 j: 21.0 Rozpoczecie obslugi pakietu i: 2.0 j: 22.0
+obecny czas to: 183 ms 
+obecny czas to: 184 ms 
+obecny czas to: 185 ms 
+obecny czas to: 186 ms  Obsluzono pakiet i: 2.0 j: 22.0 Odrzucono pakiet: i: 1.0 j: 24.0
+obecny czas to: 187 ms  Rozpoczecie obslugi pakietu i: 1.0 j: 25.0
+obecny czas to: 188 ms 
+obecny czas to: 189 ms 
+obecny czas to: 190 ms 
+obecny czas to: 191 ms  Obsluzono pakiet i: 1.0 j: 25.0 Rozpoczecie obslugi pakietu i: 2.0 j: 23.0
+obecny czas to: 192 ms 
+obecny czas to: 193 ms 
+obecny czas to: 194 ms 
+obecny czas to: 195 ms  Obsluzono pakiet i: 2.0 j: 23.0 Rozpoczecie obslugi pakietu i: 2.0 j: 24.0
+obecny czas to: 196 ms 
+obecny czas to: 197 ms 
+obecny czas to: 198 ms 
+obecny czas to: 199 ms  Obsluzono pakiet i: 2.0 j: 24.0 Odrzucono pakiet: i: 1.0 j: 26.0
+obecny czas to: 200 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 25.0
+obecny czas to: 201 ms 
+obecny czas to: 202 ms 
+obecny czas to: 203 ms 
+obecny czas to: 204 ms  Obsluzono pakiet i: 2.0 j: 25.0 Rozpoczecie obslugi pakietu i: 1.0 j: 27.0
+obecny czas to: 205 ms 
+obecny czas to: 206 ms 
+obecny czas to: 207 ms 
+obecny czas to: 208 ms  Obsluzono pakiet i: 1.0 j: 27.0 Rozpoczecie obslugi pakietu i: 2.0 j: 26.0
+obecny czas to: 209 ms 
+obecny czas to: 210 ms 
+obecny czas to: 211 ms 
+obecny czas to: 212 ms  Obsluzono pakiet i: 2.0 j: 26.0 Rozpoczecie obslugi pakietu i: 2.0 j: 27.0
+obecny czas to: 213 ms 
+obecny czas to: 214 ms 
+obecny czas to: 215 ms 
+obecny czas to: 216 ms  Obsluzono pakiet i: 2.0 j: 27.0 Odrzucono pakiet: i: 1.0 j: 28.0
+obecny czas to: 217 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 28.0
+obecny czas to: 218 ms 
+obecny czas to: 219 ms 
+obecny czas to: 220 ms 
+obecny czas to: 221 ms  Obsluzono pakiet i: 2.0 j: 28.0 Odrzucono pakiet: i: 1.0 j: 29.0
+obecny czas to: 222 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 29.0
+obecny czas to: 223 ms 
+obecny czas to: 224 ms 
+obecny czas to: 225 ms 
+obecny czas to: 226 ms  Obsluzono pakiet i: 2.0 j: 29.0 Odrzucono pakiet: i: 1.0 j: 30.0
+obecny czas to: 227 ms  Rozpoczecie obslugi pakietu i: 1.0 j: 31.0
+obecny czas to: 228 ms 
+obecny czas to: 229 ms 
+obecny czas to: 230 ms 
+obecny czas to: 231 ms  Obsluzono pakiet i: 1.0 j: 31.0 Rozpoczecie obslugi pakietu i: 2.0 j: 30.0
+obecny czas to: 232 ms 
+obecny czas to: 233 ms 
+obecny czas to: 234 ms 
+obecny czas to: 235 ms  Obsluzono pakiet i: 2.0 j: 30.0 Rozpoczecie obslugi pakietu i: 1.0 j: 32.0
+obecny czas to: 236 ms 
+obecny czas to: 237 ms 
+obecny czas to: 238 ms 
+obecny czas to: 239 ms  Obsluzono pakiet i: 1.0 j: 32.0 Rozpoczecie obslugi pakietu i: 2.0 j: 31.0
+obecny czas to: 240 ms 
+obecny czas to: 241 ms 
+obecny czas to: 242 ms 
+obecny czas to: 243 ms  Obsluzono pakiet i: 2.0 j: 31.0 Odrzucono pakiet: i: 1.0 j: 33.0
+obecny czas to: 244 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 32.0
+obecny czas to: 245 ms 
+obecny czas to: 246 ms 
+obecny czas to: 247 ms 
+obecny czas to: 248 ms  Obsluzono pakiet i: 2.0 j: 32.0 Rozpoczecie obslugi pakietu i: 1.0 j: 34.0
+obecny czas to: 249 ms 
+obecny czas to: 250 ms 
+obecny czas to: 251 ms 
+obecny czas to: 252 ms  Obsluzono pakiet i: 1.0 j: 34.0 Rozpoczecie obslugi pakietu i: 2.0 j: 33.0
+obecny czas to: 253 ms 
+obecny czas to: 254 ms 
+obecny czas to: 255 ms 
+obecny czas to: 256 ms  Obsluzono pakiet i: 2.0 j: 33.0 Odrzucono pakiet: i: 1.0 j: 35.0
+obecny czas to: 257 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 34.0
+obecny czas to: 258 ms 
+obecny czas to: 259 ms 
+obecny czas to: 260 ms 
+obecny czas to: 261 ms  Obsluzono pakiet i: 2.0 j: 34.0 Rozpoczecie obslugi pakietu i: 1.0 j: 36.0
+obecny czas to: 262 ms 
+obecny czas to: 263 ms 
+obecny czas to: 264 ms 
+obecny czas to: 265 ms  Obsluzono pakiet i: 1.0 j: 36.0 Rozpoczecie obslugi pakietu i: 2.0 j: 35.0
+obecny czas to: 266 ms 
+obecny czas to: 267 ms 
+obecny czas to: 268 ms 
+obecny czas to: 269 ms  Obsluzono pakiet i: 2.0 j: 35.0 Odrzucono pakiet: i: 1.0 j: 37.0
+obecny czas to: 270 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 36.0
+obecny czas to: 271 ms 
+obecny czas to: 272 ms 
+obecny czas to: 273 ms 
+obecny czas to: 274 ms  Obsluzono pakiet i: 2.0 j: 36.0 Rozpoczecie obslugi pakietu i: 1.0 j: 38.0
+obecny czas to: 275 ms 
+obecny czas to: 276 ms 
+obecny czas to: 277 ms 
+obecny czas to: 278 ms  Obsluzono pakiet i: 1.0 j: 38.0 Rozpoczecie obslugi pakietu i: 2.0 j: 37.0
+obecny czas to: 279 ms 
+obecny czas to: 280 ms 
+obecny czas to: 281 ms 
+obecny czas to: 282 ms  Obsluzono pakiet i: 2.0 j: 37.0 Rozpoczecie obslugi pakietu i: 2.0 j: 38.0
+obecny czas to: 283 ms 
+obecny czas to: 284 ms 
+obecny czas to: 285 ms 
+obecny czas to: 286 ms  Obsluzono pakiet i: 2.0 j: 38.0 Odrzucono pakiet: i: 1.0 j: 39.0
+obecny czas to: 287 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 39.0
+obecny czas to: 288 ms 
+obecny czas to: 289 ms 
+obecny czas to: 290 ms 
+obecny czas to: 291 ms  Obsluzono pakiet i: 2.0 j: 39.0 Rozpoczecie obslugi pakietu i: 1.0 j: 40.0
+obecny czas to: 292 ms 
+obecny czas to: 293 ms 
+obecny czas to: 294 ms 
+obecny czas to: 295 ms  Obsluzono pakiet i: 1.0 j: 40.0 Rozpoczecie obslugi pakietu i: 2.0 j: 40.0
+obecny czas to: 296 ms 
+obecny czas to: 297 ms 
+obecny czas to: 298 ms 
+obecny czas to: 299 ms  Obsluzono pakiet i: 2.0 j: 40.0 Rozpoczecie obslugi pakietu i: 1.0 j: 41.0
+obecny czas to: 300 ms 
+obecny czas to: 301 ms 
+obecny czas to: 302 ms 
+obecny czas to: 303 ms  Obsluzono pakiet i: 1.0 j: 41.0 Rozpoczecie obslugi pakietu i: 2.0 j: 41.0
+obecny czas to: 304 ms 
+obecny czas to: 305 ms 
+obecny czas to: 306 ms 
+obecny czas to: 307 ms  Obsluzono pakiet i: 2.0 j: 41.0 Rozpoczecie obslugi pakietu i: 1.0 j: 42.0
+obecny czas to: 308 ms 
+obecny czas to: 309 ms 
+obecny czas to: 310 ms 
+obecny czas to: 311 ms  Obsluzono pakiet i: 1.0 j: 42.0 Rozpoczecie obslugi pakietu i: 2.0 j: 42.0
+obecny czas to: 312 ms 
+obecny czas to: 313 ms 
+obecny czas to: 314 ms 
+obecny czas to: 315 ms  Obsluzono pakiet i: 2.0 j: 42.0 Odrzucono pakiet: i: 1.0 j: 43.0
+obecny czas to: 316 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 43.0
+obecny czas to: 317 ms 
+obecny czas to: 318 ms 
+obecny czas to: 319 ms 
+obecny czas to: 320 ms  Obsluzono pakiet i: 2.0 j: 43.0 Rozpoczecie obslugi pakietu i: 1.0 j: 44.0
+obecny czas to: 321 ms 
+obecny czas to: 322 ms 
+obecny czas to: 323 ms 
+obecny czas to: 324 ms  Obsluzono pakiet i: 1.0 j: 44.0 Rozpoczecie obslugi pakietu i: 2.0 j: 44.0
+obecny czas to: 325 ms 
+obecny czas to: 326 ms 
+obecny czas to: 327 ms 
+obecny czas to: 328 ms  Obsluzono pakiet i: 2.0 j: 44.0 Odrzucono pakiet: i: 1.0 j: 45.0
+obecny czas to: 329 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 45.0
+obecny czas to: 330 ms 
+obecny czas to: 331 ms 
+obecny czas to: 332 ms 
+obecny czas to: 333 ms  Obsluzono pakiet i: 2.0 j: 45.0 Rozpoczecie obslugi pakietu i: 2.0 j: 46.0
+obecny czas to: 334 ms 
+obecny czas to: 335 ms 
+obecny czas to: 336 ms 
+obecny czas to: 337 ms  Obsluzono pakiet i: 2.0 j: 46.0 Rozpoczecie obslugi pakietu i: 2.0 j: 47.0
+obecny czas to: 338 ms 
+obecny czas to: 339 ms 
+obecny czas to: 340 ms 
+obecny czas to: 341 ms  Obsluzono pakiet i: 2.0 j: 47.0 Odrzucono pakiet: i: 1.0 j: 46.0
+obecny czas to: 342 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 48.0
+obecny czas to: 343 ms 
+obecny czas to: 344 ms 
+obecny czas to: 345 ms 
+obecny czas to: 346 ms  Obsluzono pakiet i: 2.0 j: 48.0 Rozpoczecie obslugi pakietu i: 1.0 j: 47.0
+obecny czas to: 347 ms 
+obecny czas to: 348 ms 
+obecny czas to: 349 ms 
+obecny czas to: 350 ms  Obsluzono pakiet i: 1.0 j: 47.0 Rozpoczecie obslugi pakietu i: 2.0 j: 49.0
+obecny czas to: 351 ms 
+obecny czas to: 352 ms 
+obecny czas to: 353 ms 
+obecny czas to: 354 ms  Obsluzono pakiet i: 2.0 j: 49.0 Rozpoczecie obslugi pakietu i: 2.0 j: 50.0
+obecny czas to: 355 ms 
+obecny czas to: 356 ms 
+obecny czas to: 357 ms 
+obecny czas to: 358 ms  Obsluzono pakiet i: 2.0 j: 50.0 Odrzucono pakiet: i: 1.0 j: 48.0
+obecny czas to: 359 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 51.0
+obecny czas to: 360 ms 
+obecny czas to: 361 ms 
+obecny czas to: 362 ms 
+obecny czas to: 363 ms  Obsluzono pakiet i: 2.0 j: 51.0 Odrzucono pakiet: i: 1.0 j: 49.0
+obecny czas to: 364 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 52.0
+obecny czas to: 365 ms 
+obecny czas to: 366 ms 
+obecny czas to: 367 ms 
+obecny czas to: 368 ms  Obsluzono pakiet i: 2.0 j: 52.0 Rozpoczecie obslugi pakietu i: 1.0 j: 50.0
+obecny czas to: 369 ms 
+obecny czas to: 370 ms 
+obecny czas to: 371 ms 
+obecny czas to: 372 ms  Obsluzono pakiet i: 1.0 j: 50.0 Rozpoczecie obslugi pakietu i: 2.0 j: 53.0
+obecny czas to: 373 ms 
+obecny czas to: 374 ms 
+obecny czas to: 375 ms 
+obecny czas to: 376 ms  Obsluzono pakiet i: 2.0 j: 53.0 Rozpoczecie obslugi pakietu i: 2.0 j: 54.0
+obecny czas to: 377 ms 
+obecny czas to: 378 ms 
+obecny czas to: 379 ms 
+obecny czas to: 380 ms  Obsluzono pakiet i: 2.0 j: 54.0 Odrzucono pakiet: i: 1.0 j: 51.0
+obecny czas to: 381 ms  Rozpoczecie obslugi pakietu i: 1.0 j: 52.0
+obecny czas to: 382 ms 
+obecny czas to: 383 ms 
+obecny czas to: 384 ms 
+obecny czas to: 385 ms  Obsluzono pakiet i: 1.0 j: 52.0 Rozpoczecie obslugi pakietu i: 2.0 j: 55.0
+obecny czas to: 386 ms 
+obecny czas to: 387 ms 
+obecny czas to: 388 ms 
+obecny czas to: 389 ms  Obsluzono pakiet i: 2.0 j: 55.0 Rozpoczecie obslugi pakietu i: 1.0 j: 53.0
+obecny czas to: 390 ms 
+obecny czas to: 391 ms 
+obecny czas to: 392 ms 
+obecny czas to: 393 ms  Obsluzono pakiet i: 1.0 j: 53.0 Rozpoczecie obslugi pakietu i: 2.0 j: 56.0
+obecny czas to: 394 ms 
+obecny czas to: 395 ms 
+obecny czas to: 396 ms 
+obecny czas to: 397 ms  Obsluzono pakiet i: 2.0 j: 56.0 Rozpoczecie obslugi pakietu i: 1.0 j: 54.0
+obecny czas to: 398 ms 
+obecny czas to: 399 ms 
+obecny czas to: 400 ms 
+obecny czas to: 401 ms  Obsluzono pakiet i: 1.0 j: 54.0 Rozpoczecie obslugi pakietu i: 2.0 j: 57.0
+obecny czas to: 402 ms 
+obecny czas to: 403 ms 
+obecny czas to: 404 ms 
+obecny czas to: 405 ms  Obsluzono pakiet i: 2.0 j: 57.0 Odrzucono pakiet: i: 1.0 j: 55.0
+obecny czas to: 406 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 58.0
+obecny czas to: 407 ms 
+obecny czas to: 408 ms 
+obecny czas to: 409 ms 
+obecny czas to: 410 ms  Obsluzono pakiet i: 2.0 j: 58.0 Rozpoczecie obslugi pakietu i: 1.0 j: 56.0
+obecny czas to: 411 ms 
+obecny czas to: 412 ms 
+obecny czas to: 413 ms 
+obecny czas to: 414 ms  Obsluzono pakiet i: 1.0 j: 56.0 Rozpoczecie obslugi pakietu i: 2.0 j: 59.0
+obecny czas to: 415 ms 
+obecny czas to: 416 ms 
+obecny czas to: 417 ms 
+obecny czas to: 418 ms  Obsluzono pakiet i: 2.0 j: 59.0 Odrzucono pakiet: i: 1.0 j: 57.0
+obecny czas to: 419 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 60.0
+obecny czas to: 420 ms 
+obecny czas to: 421 ms 
+obecny czas to: 422 ms 
+obecny czas to: 423 ms  Obsluzono pakiet i: 2.0 j: 60.0 Rozpoczecie obslugi pakietu i: 1.0 j: 58.0
+obecny czas to: 424 ms 
+obecny czas to: 425 ms 
+obecny czas to: 426 ms 
+obecny czas to: 427 ms  Obsluzono pakiet i: 1.0 j: 58.0 Rozpoczecie obslugi pakietu i: 2.0 j: 61.0
+obecny czas to: 428 ms 
+obecny czas to: 429 ms 
+obecny czas to: 430 ms 
+obecny czas to: 431 ms  Obsluzono pakiet i: 2.0 j: 61.0 Rozpoczecie obslugi pakietu i: 1.0 j: 59.0
+obecny czas to: 432 ms 
+obecny czas to: 433 ms 
+obecny czas to: 434 ms 
+obecny czas to: 435 ms  Obsluzono pakiet i: 1.0 j: 59.0 Rozpoczecie obslugi pakietu i: 2.0 j: 62.0
+obecny czas to: 436 ms 
+obecny czas to: 437 ms 
+obecny czas to: 438 ms 
+obecny czas to: 439 ms  Obsluzono pakiet i: 2.0 j: 62.0 Rozpoczecie obslugi pakietu i: 2.0 j: 63.0
+obecny czas to: 440 ms 
+obecny czas to: 441 ms 
+obecny czas to: 442 ms 
+obecny czas to: 443 ms  Obsluzono pakiet i: 2.0 j: 63.0 Odrzucono pakiet: i: 1.0 j: 60.0
+obecny czas to: 444 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 64.0
+obecny czas to: 445 ms 
+obecny czas to: 446 ms 
+obecny czas to: 447 ms 
+obecny czas to: 448 ms  Obsluzono pakiet i: 2.0 j: 64.0 Rozpoczecie obslugi pakietu i: 1.0 j: 61.0
+obecny czas to: 449 ms 
+obecny czas to: 450 ms 
+obecny czas to: 451 ms 
+obecny czas to: 452 ms  Obsluzono pakiet i: 1.0 j: 61.0 Rozpoczecie obslugi pakietu i: 2.0 j: 65.0
+obecny czas to: 453 ms 
+obecny czas to: 454 ms 
+obecny czas to: 455 ms 
+obecny czas to: 456 ms  Obsluzono pakiet i: 2.0 j: 65.0 Rozpoczecie obslugi pakietu i: 1.0 j: 62.0
+obecny czas to: 457 ms 
+obecny czas to: 458 ms 
+obecny czas to: 459 ms 
+obecny czas to: 460 ms  Obsluzono pakiet i: 1.0 j: 62.0 Rozpoczecie obslugi pakietu i: 2.0 j: 66.0
+obecny czas to: 461 ms 
+obecny czas to: 462 ms 
+obecny czas to: 463 ms 
+obecny czas to: 464 ms  Obsluzono pakiet i: 2.0 j: 66.0 Rozpoczecie obslugi pakietu i: 2.0 j: 67.0
+obecny czas to: 465 ms 
+obecny czas to: 466 ms 
+obecny czas to: 467 ms 
+obecny czas to: 468 ms  Obsluzono pakiet i: 2.0 j: 67.0 Odrzucono pakiet: i: 1.0 j: 63.0
+obecny czas to: 469 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 68.0
+obecny czas to: 470 ms 
+obecny czas to: 471 ms 
+obecny czas to: 472 ms 
+obecny czas to: 473 ms  Obsluzono pakiet i: 2.0 j: 68.0 Rozpoczecie obslugi pakietu i: 1.0 j: 64.0
+obecny czas to: 474 ms 
+obecny czas to: 475 ms 
+obecny czas to: 476 ms 
+obecny czas to: 477 ms  Obsluzono pakiet i: 1.0 j: 64.0 Odrzucono pakiet: i: 1.0 j: 65.0
+obecny czas to: 478 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 69.0
+obecny czas to: 479 ms 
+obecny czas to: 480 ms 
+obecny czas to: 481 ms 
+obecny czas to: 482 ms  Obsluzono pakiet i: 2.0 j: 69.0 Rozpoczecie obslugi pakietu i: 2.0 j: 70.0
+obecny czas to: 483 ms 
+obecny czas to: 484 ms 
+obecny czas to: 485 ms 
+obecny czas to: 486 ms  Obsluzono pakiet i: 2.0 j: 70.0 Odrzucono pakiet: i: 1.0 j: 66.0
+obecny czas to: 487 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 71.0
+obecny czas to: 488 ms 
+obecny czas to: 489 ms 
+obecny czas to: 490 ms 
+obecny czas to: 491 ms  Obsluzono pakiet i: 2.0 j: 71.0 Odrzucono pakiet: i: 1.0 j: 67.0
+obecny czas to: 492 ms  Rozpoczecie obslugi pakietu i: 1.0 j: 68.0
+obecny czas to: 493 ms 
+obecny czas to: 494 ms 
+obecny czas to: 495 ms 
+obecny czas to: 496 ms  Obsluzono pakiet i: 1.0 j: 68.0 Rozpoczecie obslugi pakietu i: 2.0 j: 72.0
+obecny czas to: 497 ms 
+obecny czas to: 498 ms 
+obecny czas to: 499 ms 
+obecny czas to: 500 ms  Obsluzono pakiet i: 2.0 j: 72.0 Odrzucono pakiet: i: 1.0 j: 69.0
+obecny czas to: 501 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 73.0
+obecny czas to: 502 ms 
+obecny czas to: 503 ms 
+obecny czas to: 504 ms 
+obecny czas to: 505 ms  Obsluzono pakiet i: 2.0 j: 73.0 Rozpoczecie obslugi pakietu i: 1.0 j: 70.0
+obecny czas to: 506 ms 
+obecny czas to: 507 ms 
+obecny czas to: 508 ms 
+obecny czas to: 509 ms  Obsluzono pakiet i: 1.0 j: 70.0 Rozpoczecie obslugi pakietu i: 2.0 j: 74.0
+obecny czas to: 510 ms 
+obecny czas to: 511 ms 
+obecny czas to: 512 ms 
+obecny czas to: 513 ms  Obsluzono pakiet i: 2.0 j: 74.0 Rozpoczecie obslugi pakietu i: 1.0 j: 71.0
+obecny czas to: 514 ms 
+obecny czas to: 515 ms 
+obecny czas to: 516 ms 
+obecny czas to: 517 ms  Obsluzono pakiet i: 1.0 j: 71.0 Rozpoczecie obslugi pakietu i: 2.0 j: 75.0
+obecny czas to: 518 ms 
+obecny czas to: 519 ms 
+obecny czas to: 520 ms 
+obecny czas to: 521 ms  Obsluzono pakiet i: 2.0 j: 75.0 Odrzucono pakiet: i: 1.0 j: 72.0
+obecny czas to: 522 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 76.0
+obecny czas to: 523 ms 
+obecny czas to: 524 ms 
+obecny czas to: 525 ms 
+obecny czas to: 526 ms  Obsluzono pakiet i: 2.0 j: 76.0 Rozpoczecie obslugi pakietu i: 1.0 j: 73.0
+obecny czas to: 527 ms 
+obecny czas to: 528 ms 
+obecny czas to: 529 ms 
+obecny czas to: 530 ms  Obsluzono pakiet i: 1.0 j: 73.0 Rozpoczecie obslugi pakietu i: 2.0 j: 77.0
+obecny czas to: 531 ms 
+obecny czas to: 532 ms 
+obecny czas to: 533 ms 
+obecny czas to: 534 ms  Obsluzono pakiet i: 2.0 j: 77.0 Rozpoczecie obslugi pakietu i: 2.0 j: 78.0
+obecny czas to: 535 ms 
+obecny czas to: 536 ms 
+obecny czas to: 537 ms 
+obecny czas to: 538 ms  Obsluzono pakiet i: 2.0 j: 78.0 Odrzucono pakiet: i: 1.0 j: 74.0
+obecny czas to: 539 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 79.0
+obecny czas to: 540 ms 
+obecny czas to: 541 ms 
+obecny czas to: 542 ms 
+obecny czas to: 543 ms  Obsluzono pakiet i: 2.0 j: 79.0 Rozpoczecie obslugi pakietu i: 2.0 j: 80.0
+obecny czas to: 544 ms 
+obecny czas to: 545 ms 
+obecny czas to: 546 ms 
+obecny czas to: 547 ms  Obsluzono pakiet i: 2.0 j: 80.0 Odrzucono pakiet: i: 1.0 j: 75.0
+obecny czas to: 548 ms  Rozpoczecie obslugi pakietu i: 1.0 j: 76.0
+obecny czas to: 549 ms 
+obecny czas to: 550 ms 
+obecny czas to: 551 ms 
+obecny czas to: 552 ms  Obsluzono pakiet i: 1.0 j: 76.0 Rozpoczecie obslugi pakietu i: 2.0 j: 81.0
+obecny czas to: 553 ms 
+obecny czas to: 554 ms 
+obecny czas to: 555 ms 
+obecny czas to: 556 ms  Obsluzono pakiet i: 2.0 j: 81.0 Rozpoczecie obslugi pakietu i: 2.0 j: 82.0
+obecny czas to: 557 ms 
+obecny czas to: 558 ms 
+obecny czas to: 559 ms 
+obecny czas to: 560 ms  Obsluzono pakiet i: 2.0 j: 82.0 Odrzucono pakiet: i: 1.0 j: 77.0
+obecny czas to: 561 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 83.0
+obecny czas to: 562 ms 
+obecny czas to: 563 ms 
+obecny czas to: 564 ms 
+obecny czas to: 565 ms  Obsluzono pakiet i: 2.0 j: 83.0 Odrzucono pakiet: i: 1.0 j: 78.0
+obecny czas to: 566 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 84.0
+obecny czas to: 567 ms 
+obecny czas to: 568 ms 
+obecny czas to: 569 ms 
+obecny czas to: 570 ms  Obsluzono pakiet i: 2.0 j: 84.0 Odrzucono pakiet: i: 1.0 j: 79.0
+obecny czas to: 571 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 85.0
+obecny czas to: 572 ms 
+obecny czas to: 573 ms 
+obecny czas to: 574 ms 
+obecny czas to: 575 ms  Obsluzono pakiet i: 2.0 j: 85.0 Odrzucono pakiet: i: 1.0 j: 80.0
+obecny czas to: 576 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 86.0
+obecny czas to: 577 ms 
+obecny czas to: 578 ms 
+obecny czas to: 579 ms 
+obecny czas to: 580 ms  Obsluzono pakiet i: 2.0 j: 86.0 Odrzucono pakiet: i: 1.0 j: 81.0
+obecny czas to: 581 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 87.0
+obecny czas to: 582 ms 
+obecny czas to: 583 ms 
+obecny czas to: 584 ms 
+obecny czas to: 585 ms  Obsluzono pakiet i: 2.0 j: 87.0 Rozpoczecie obslugi pakietu i: 2.0 j: 88.0
+obecny czas to: 586 ms 
+obecny czas to: 587 ms 
+obecny czas to: 588 ms 
+obecny czas to: 589 ms  Obsluzono pakiet i: 2.0 j: 88.0 Odrzucono pakiet: i: 1.0 j: 82.0
+obecny czas to: 590 ms  Odrzucono pakiet: i: 1.0 j: 83.0
+obecny czas to: 591 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 89.0
+obecny czas to: 592 ms 
+obecny czas to: 593 ms 
+obecny czas to: 594 ms 
+obecny czas to: 595 ms  Obsluzono pakiet i: 2.0 j: 89.0 Odrzucono pakiet: i: 1.0 j: 84.0
+obecny czas to: 596 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 90.0
+obecny czas to: 597 ms 
+obecny czas to: 598 ms 
+obecny czas to: 599 ms 
+obecny czas to: 600 ms  Obsluzono pakiet i: 2.0 j: 90.0 Rozpoczecie obslugi pakietu i: 2.0 j: 91.0
+obecny czas to: 601 ms 
+obecny czas to: 602 ms 
+obecny czas to: 603 ms 
+obecny czas to: 604 ms  Obsluzono pakiet i: 2.0 j: 91.0 Odrzucono pakiet: i: 1.0 j: 85.0
+obecny czas to: 605 ms  Rozpoczecie obslugi pakietu i: 1.0 j: 86.0
+obecny czas to: 606 ms 
+obecny czas to: 607 ms 
+obecny czas to: 608 ms 
+obecny czas to: 609 ms  Obsluzono pakiet i: 1.0 j: 86.0 Rozpoczecie obslugi pakietu i: 2.0 j: 92.0
+obecny czas to: 610 ms 
+obecny czas to: 611 ms 
+obecny czas to: 612 ms 
+obecny czas to: 613 ms  Obsluzono pakiet i: 2.0 j: 92.0 Odrzucono pakiet: i: 1.0 j: 87.0
+obecny czas to: 614 ms  Rozpoczecie obslugi pakietu i: 1.0 j: 88.0
+obecny czas to: 615 ms 
+obecny czas to: 616 ms 
+obecny czas to: 617 ms 
+obecny czas to: 618 ms  Obsluzono pakiet i: 1.0 j: 88.0 Rozpoczecie obslugi pakietu i: 2.0 j: 93.0
+obecny czas to: 619 ms 
+obecny czas to: 620 ms 
+obecny czas to: 621 ms 
+obecny czas to: 622 ms  Obsluzono pakiet i: 2.0 j: 93.0 Rozpoczecie obslugi pakietu i: 1.0 j: 89.0
+obecny czas to: 623 ms 
+obecny czas to: 624 ms 
+obecny czas to: 625 ms 
+obecny czas to: 626 ms  Obsluzono pakiet i: 1.0 j: 89.0 Rozpoczecie obslugi pakietu i: 2.0 j: 94.0
+obecny czas to: 627 ms 
+obecny czas to: 628 ms 
+obecny czas to: 629 ms 
+obecny czas to: 630 ms  Obsluzono pakiet i: 2.0 j: 94.0 Rozpoczecie obslugi pakietu i: 1.0 j: 90.0
+obecny czas to: 631 ms 
+obecny czas to: 632 ms 
+obecny czas to: 633 ms 
+obecny czas to: 634 ms  Obsluzono pakiet i: 1.0 j: 90.0 Rozpoczecie obslugi pakietu i: 2.0 j: 95.0
+obecny czas to: 635 ms 
+obecny czas to: 636 ms 
+obecny czas to: 637 ms 
+obecny czas to: 638 ms  Obsluzono pakiet i: 2.0 j: 95.0 Rozpoczecie obslugi pakietu i: 2.0 j: 96.0
+obecny czas to: 639 ms 
+obecny czas to: 640 ms 
+obecny czas to: 641 ms 
+obecny czas to: 642 ms  Obsluzono pakiet i: 2.0 j: 96.0 Odrzucono pakiet: i: 1.0 j: 91.0
+obecny czas to: 643 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 97.0
+obecny czas to: 644 ms 
+obecny czas to: 645 ms 
+obecny czas to: 646 ms 
+obecny czas to: 647 ms  Obsluzono pakiet i: 2.0 j: 97.0 Odrzucono pakiet: i: 1.0 j: 92.0
+obecny czas to: 648 ms  Rozpoczecie obslugi pakietu i: 1.0 j: 93.0
+obecny czas to: 649 ms 
+obecny czas to: 650 ms 
+obecny czas to: 651 ms 
+obecny czas to: 652 ms  Obsluzono pakiet i: 1.0 j: 93.0 Rozpoczecie obslugi pakietu i: 2.0 j: 98.0
+obecny czas to: 653 ms 
+obecny czas to: 654 ms 
+obecny czas to: 655 ms 
+obecny czas to: 656 ms  Obsluzono pakiet i: 2.0 j: 98.0 Rozpoczecie obslugi pakietu i: 2.0 j: 99.0
+obecny czas to: 657 ms 
+obecny czas to: 658 ms 
+obecny czas to: 659 ms 
+obecny czas to: 660 ms  Obsluzono pakiet i: 2.0 j: 99.0 Odrzucono pakiet: i: 1.0 j: 94.0
+obecny czas to: 661 ms  Rozpoczecie obslugi pakietu i: 2.0 j: 100.0
+obecny czas to: 662 ms 
+obecny czas to: 663 ms 
+obecny czas to: 664 ms 
+obecny czas to: 665 ms  Obsluzono pakiet i: 2.0 j: 100.0 Rozpoczecie obslugi pakietu i: 1.0 j: 95.0
+obecny czas to: 666 ms 
+obecny czas to: 667 ms 
+obecny czas to: 668 ms 
+obecny czas to: 669 ms  Obsluzono pakiet i: 1.0 j: 95.0 Rozpoczecie obslugi pakietu i: 1.0 j: 96.0
+obecny czas to: 670 ms 
+obecny czas to: 671 ms 
+obecny czas to: 672 ms 
+obecny czas to: 673 ms  Obsluzono pakiet i: 1.0 j: 96.0 Rozpoczecie obslugi pakietu i: 1.0 j: 97.0
+obecny czas to: 674 ms 
+obecny czas to: 675 ms 
+obecny czas to: 676 ms 
+obecny czas to: 677 ms  Obsluzono pakiet i: 1.0 j: 97.0 Rozpoczecie obslugi pakietu i: 1.0 j: 98.0
+obecny czas to: 678 ms 
+obecny czas to: 679 ms 
+obecny czas to: 680 ms 
+obecny czas to: 681 ms  Obsluzono pakiet i: 1.0 j: 98.0 Rozpoczecie obslugi pakietu i: 1.0 j: 99.0
+obecny czas to: 682 ms 
+obecny czas to: 683 ms 
+obecny czas to: 684 ms 
+obecny czas to: 685 ms  Obsluzono pakiet i: 1.0 j: 99.0 Rozpoczecie obslugi pakietu i: 1.0 j: 100.0
+obecny czas to: 686 ms 
+obecny czas to: 687 ms 
+obecny czas to: 688 ms 
+obecny czas to: 689 ms  Obsluzono pakiet i: 1.0 j: 100.0
+ procent straconych pakietow z pierwszego zrodla to: 39.0%
+ procent straconych pakietow z drugiego zrodla to: 0.0%
+
+Process finished with exit code 0

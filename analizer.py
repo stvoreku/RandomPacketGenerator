@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+FILE = "EDD-lambda-5-100-pakiety-4-delay-50.txt"
 
 SIZES = {}
 
@@ -14,7 +15,7 @@ LOST_DICT = {}
 LOST_DICT[TAG_I1] = {}
 LOST_DICT[TAG_I2] = {}
 
-SIZES[TAG_I1] = 3
+SIZES[TAG_I1] = 4
 SIZES[TAG_I2] = 4
 
 ALL_BYTES = {}
@@ -25,7 +26,11 @@ ALL_LOST = {}
 ALL_LOST[TAG_I1] = 0
 ALL_LOST[TAG_I2] = 0
 
-with open("output.txt", "r") as file:
+LAST_SEND = {}
+LAST_SEND[TAG_I1] = 0
+LAST_SEND[TAG_I2] = 0
+
+with open(FILE, "r") as file:
     for line in file.readlines():
         line_split = line.split()
         try:
@@ -51,7 +56,9 @@ with open("output.txt", "r") as file:
                             for tag in SENT_DICT.keys():
                                 if current_tag == tag:
                                     ALL_BYTES[tag] = float(packet_num) * SIZES[tag]
-                                    SENT_DICT[tag][t] = float(packet_num) * SIZES[tag]  / (ALL_BYTES[TAG_I2] + ALL_BYTES[TAG_I1])
+                                    LAST_SEND[tag] += SIZES[tag]
+                                    print(LAST_SEND)
+                                    SENT_DICT[tag][t] = LAST_SEND[tag] # / (ALL_BYTES[TAG_I2] + ALL_BYTES[TAG_I1])
                         elif cmd == "Odrzucono":
                             for tag in LOST_DICT.keys():
                                 print("LOSS")
@@ -78,11 +85,29 @@ x1, y1 = zip(*lists) # unpack a list of pairs into two tuples
 lists = sorted(SENT_DICT[TAG_I2].items()) # sorted by key, return a list of tuples
 x2, y2 = zip(*lists) # unpack a list of pairs into two tuples
 
-plt.plot(x2, y2)
-plt.plot(x1, y1)
-plt.show()
+#plt.plot(x2, y2)
+#plt.plot(x1, y1)
+#plt.show()
 
 lists = sorted(LOST_DICT[TAG_I1].items()) # sorted by key, return a list of tuples
 x3, y3 = zip(*lists) # unpack a list of pairs into two tuples
-plt.plot(x3, y3)
+#plt.plot(x3, y3)
+
+
+fig = plt.figure()
+ax1 = fig.add_subplot()
+ax1.set_ylabel('Dane')
+ax1.set_xlabel("Czas")
+ax1.set_title('Ilość wysłanych Danych')
+ax1.plot(x1, y1, color='tab:blue')
+ax1.plot(x2, y2, color='tab:orange')
+
+
+fig2 = plt.figure()
+ax1 = fig2.add_subplot()
+ax1.set_ylabel('Utracone Pakiety')
+ax1.set_xlabel("Czas")
+ax1.set_title('Ilość utraconych Pakietów')
+ax1.plot(x3, y3, color='tab:red')
+
 plt.show()
