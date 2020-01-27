@@ -15,8 +15,8 @@ b1 = 4
 b2 = 4
 Q1 = 0
 Q2 = 0
-Q1delta = 0.2
-Q2delta = 0.8
+Q1delta = 0.15
+Q2delta = 0.6
 Q1sent = {}
 Q2sent = {}
 allsent_Q1 = 0
@@ -65,6 +65,27 @@ lists = sorted(Q1sent.items()) # sorted by key, return a list of tuples
 x1, y1 = zip(*lists) # unpack a list of pairs into two tuples
 lists = sorted(Q2sent.items()) # sorted by key, return a list of tuples
 x2, y2 = zip(*lists) # unpack a list of pairs into two tuples
-plt.plot(x2, y2)
-plt.plot(x1, y1)
+
+
+fig = plt.figure()
+ax1 = fig.add_subplot()
+ax1.set_ylabel('%')
+ax1.set_xlabel("Czas")
+ax1.set_title('Udział w łączu')
+try:
+    ax1.plot(x1, y1, color='tab:blue')
+    ax1.plot(x2, y2, color='tab:orange')
+except:
+    pass
+# fig2 = plt.figure()
+# ax2 = fig2.add_subplot()
+# ax2.set_ylabel('Dane')
+# ax2.set_xlabel("Czas")
+# ax2.set_title('Ilość wysłanych Danych')
+# try:
+#     ax2.plot(x2, y2, color='tab:blue')
+# except:
+#     pass
+#
+# #
 plt.show()
