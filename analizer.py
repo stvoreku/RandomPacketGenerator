@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-FILE = "EDD-lambda-5-100-pakiety-4-delay-50.txt"
+FILE = "output.txt"
 
 SIZES = {}
 
@@ -79,19 +79,22 @@ with open(FILE, "r") as file:
 
 print(SENT_DICT)
 print(LOST_DICT)
-lists = sorted(SENT_DICT[TAG_I1].items()) # sorted by key, return a list of tuples
-x1, y1 = zip(*lists) # unpack a list of pairs into two tuples
+try:
+    lists = sorted(SENT_DICT[TAG_I1].items()) # sorted by key, return a list of tuples
+    x1, y1 = zip(*lists) # unpack a list of pairs into two tuples
+except:
+    pass
+try:
+    lists = sorted(SENT_DICT[TAG_I2].items()) # sorted by key, return a list of tuples
+    x2, y2 = zip(*lists) # unpack a list of pairs into two tuples
+except:
+    pass
 
-lists = sorted(SENT_DICT[TAG_I2].items()) # sorted by key, return a list of tuples
-x2, y2 = zip(*lists) # unpack a list of pairs into two tuples
-
-#plt.plot(x2, y2)
-#plt.plot(x1, y1)
-#plt.show()
-
-lists = sorted(LOST_DICT[TAG_I1].items()) # sorted by key, return a list of tuples
-x3, y3 = zip(*lists) # unpack a list of pairs into two tuples
-#plt.plot(x3, y3)
+try:
+    lists = sorted(LOST_DICT[TAG_I1].items()) # sorted by key, return a list of tuples
+    x3, y3 = zip(*lists) # unpack a list of pairs into two tuples
+except:
+    pass
 
 
 fig = plt.figure()
@@ -99,8 +102,11 @@ ax1 = fig.add_subplot()
 ax1.set_ylabel('Dane')
 ax1.set_xlabel("Czas")
 ax1.set_title('Ilość wysłanych Danych')
-ax1.plot(x1, y1, color='tab:blue')
-ax1.plot(x2, y2, color='tab:orange')
+try:
+    ax1.plot(x1, y1, color='tab:blue')
+    ax1.plot(x2, y2, color='tab:orange')
+except:
+    pass
 
 
 fig2 = plt.figure()
@@ -108,6 +114,9 @@ ax1 = fig2.add_subplot()
 ax1.set_ylabel('Utracone Pakiety')
 ax1.set_xlabel("Czas")
 ax1.set_title('Ilość utraconych Pakietów')
-ax1.plot(x3, y3, color='tab:red')
+try:
+    ax1.plot(x3, y3, color='tab:red')
+except:
+    pass
 
 plt.show()
