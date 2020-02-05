@@ -1,13 +1,15 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-LAMBDA = 2
-PAC_NUM_1 = 200
-PAC_NUM_2 = 200
+LAMBDA = 13
+PAC_NUM_1 = 100000
+PAC_NUM_2 = 100000
 
 k1 = np.random.poisson(LAMBDA, PAC_NUM_1)
 k2 = np.random.poisson(LAMBDA, PAC_NUM_2)
 plt.hist(k1)
+plt.show()
+plt.hist(k2)
 plt.show()
 
 with open("input_gen.txt", "w") as file:

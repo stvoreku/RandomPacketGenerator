@@ -22,7 +22,9 @@ Q2sent = {}
 allsent_Q1 = 0
 allsent_Q2 = 0
 sending = 0
-for num in range(0, 500):
+OUTPUT_IN_B = 2000
+output_ps = OUTPUT_IN_B / 1000
+for num in range(0, 1000000):
     print("TIME: {} Q1: {:.2f} Q2: {:.2f} sending: {} B1: {} B2: {}".format(num, Q1, Q2, sending, len(bufor_1), len(bufor_2)))
     try:
         if kolejka_1[num] == '1':
@@ -56,7 +58,7 @@ for num in range(0, 500):
                 Q2sent[num] = allsent_Q2 / (allsent_Q1 + allsent_Q2)
                 print(allsent_Q2 / (allsent_Q1 + allsent_Q2))
     if sending > 0:
-        sending-=2
+        sending-=output_ps
 
 
 print(Q1sent, Q2sent)

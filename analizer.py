@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-FILE = "output.txt"
+FILE = "l13_1500B_VC.txt"
 
 SIZES = {}
 
@@ -30,20 +30,22 @@ LAST_SEND = {}
 LAST_SEND[TAG_I1] = 0
 LAST_SEND[TAG_I2] = 0
 
+LAST_PACKETS = [] #to bedzie lista z jakiej kolejki jest ostatnie 10 pakietów
+WINDOW_SIZE = 20 #ile ostatnich pakietow jest liczonych
 with open(FILE, "r") as file:
     for line in file.readlines():
         line_split = line.split()
         try:
-            if line_split[0] != 'obecny':
+            if line_split[0] != 't0:':
                 print("pass")
-            elif len(line_split) > 5:
-                t = int(line_split[3])
+            elif len(line_split) > 3:
+                t = int(line_split[1])
                 i = 0
                 cmd = ""
                 current_tag = ""
                 packet_num = ""
                 for word in line_split:
-                    print(cmd, packet_num, current_tag)
+                    #print(cmd, packet_num, current_tag)
                     i+=1
                     if word in ["Obsluzono","Rozpoczecie","Odrzucono"]:
                         cmd = word
@@ -53,12 +55,15 @@ with open(FILE, "r") as file:
                         packet_num = line_split[i]
                     if cmd != "" and current_tag != "" and packet_num != "":
                         if cmd == "Obsluzono":
+                            if len(LAST_PACKETS) == WINDOW_SIZE:
+                                LAST_PACKETS.pop(0)
                             for tag in SENT_DICT.keys():
                                 if current_tag == tag:
                                     ALL_BYTES[tag] = float(packet_num) * SIZES[tag]
                                     LAST_SEND[tag] += SIZES[tag]
-                                    print(LAST_SEND)
-                                    SENT_DICT[tag][t] = LAST_SEND[tag] # / (ALL_BYTES[TAG_I2] + ALL_BYTES[TAG_I1])
+                                    LAST_PACKETS.append(tag)
+                                    #print(LAST_PACKETS)                                      #LAST_SEND daje nam surowe dane ile wyslano. Obecny dzielnik zlicza stosunek pakietów do wszystkich
+                                    SENT_DICT[tag][t] = LAST_PACKETS.count(tag) / WINDOW_SIZE #LAST_SEND[tag]
                         elif cmd == "Odrzucono":
                             for tag in LOST_DICT.keys():
                                 print("LOSS")
@@ -72,13 +77,13 @@ with open(FILE, "r") as file:
                         packet_num = ""
 
             else:
-                print("Nothing to parse")
+                pass
         except:
             print("Bad parse")
 
 
-print(SENT_DICT)
-print(LOST_DICT)
+#print(SENT_DICT)
+#print(LOST_DICT)
 try:
     lists = sorted(SENT_DICT[TAG_I1].items()) # sorted by key, return a list of tuples
     x1, y1 = zip(*lists) # unpack a list of pairs into two tuples
