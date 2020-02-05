@@ -1,11 +1,13 @@
 import matplotlib.pyplot as plt
 
-FILE = "100kpakietow.txt"
+FILE = "l13_1500B_VC.txt"
 
 SIZES = {}
 
 TAG_I1 = "1.0"
 TAG_I2 = "2.0"
+
+LICZ_PUSTE = True
 
 SENT_DICT = {}
 SENT_DICT[TAG_I1] = {}
@@ -31,7 +33,7 @@ LAST_SEND[TAG_I1] = 0
 LAST_SEND[TAG_I2] = 0
 
 LAST_PACKETS = [] #to bedzie lista z jakiej kolejki jest ostatnie 10 pakietów
-WINDOW_SIZE = 1000 #ile ostatnich pakietow jest liczonych
+WINDOW_SIZE = 10 #ile ostatnich pakietow jest liczonych
 with open(FILE, "r") as file:
     for line in file.readlines():
         line_split = line.split()
@@ -49,6 +51,7 @@ with open(FILE, "r") as file:
                     i+=1
                     if word in ["Obsluzono","Rozpoczecie","Odrzucono"]:
                         cmd = word
+                        print(t, cmd)
                     if word == "i:":
                         current_tag = line_split[i]
                     elif word == "j:":
@@ -71,6 +74,9 @@ with open(FILE, "r") as file:
                                 if current_tag == tag:
                                     LOST_DICT[tag][t] = (ALL_LOST[tag] + 1)
                                     ALL_LOST[tag] = LOST_DICT[tag][t]
+                        elif LICZ_PUSTE:
+                            LAST_PACKETS.pop(0)
+                            LAST_PACKETS.append('NONE')
 
                         cmd = ""
                         current_tag = ""
