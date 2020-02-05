@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-FILE = "l13_1500B_VC.txt"
+FILE = "100kpakietow.txt"
 
 SIZES = {}
 
@@ -15,8 +15,8 @@ LOST_DICT = {}
 LOST_DICT[TAG_I1] = {}
 LOST_DICT[TAG_I2] = {}
 
-SIZES[TAG_I1] = 4
-SIZES[TAG_I2] = 4
+SIZES[TAG_I1] = 1500
+SIZES[TAG_I2] = 1500
 
 ALL_BYTES = {}
 ALL_BYTES[TAG_I1] = 0
@@ -31,7 +31,7 @@ LAST_SEND[TAG_I1] = 0
 LAST_SEND[TAG_I2] = 0
 
 LAST_PACKETS = [] #to bedzie lista z jakiej kolejki jest ostatnie 10 pakietów
-WINDOW_SIZE = 20 #ile ostatnich pakietow jest liczonych
+WINDOW_SIZE = 1000 #ile ostatnich pakietow jest liczonych
 with open(FILE, "r") as file:
     for line in file.readlines():
         line_split = line.split()
@@ -108,8 +108,9 @@ ax1.set_ylabel('Dane')
 ax1.set_xlabel("Czas")
 ax1.set_title('Ilość wysłanych Danych')
 try:
-    ax1.plot(x1, y1, color='tab:blue')
-    ax1.plot(x2, y2, color='tab:orange')
+    ax1.plot(x1, y1, color='tab:blue', label='Zrodlo 1')
+    ax1.plot(x2, y2, color='tab:orange', label='Zrodlo 2')
+    leg = plt.legend()
 except:
     pass
 
@@ -120,7 +121,7 @@ ax1.set_ylabel('Utracone Pakiety')
 ax1.set_xlabel("Czas")
 ax1.set_title('Ilość utraconych Pakietów')
 try:
-    ax1.plot(x3, y3, color='tab:red')
+    ax1.plot(x3, y3, color='tab:red', label = 'stracone pakiety z Zrodla 2')
 except:
     pass
 

@@ -2,29 +2,31 @@ import matplotlib.pyplot as plt
 
 
 
-with open("input_gen.txt", "r") as file:
+with open("inputL13.txt", "r") as file:
     out = file.readlines()
     kolejka_1 = out[1].split()
     kolejka_2 = out[2].split()
 
 print(len(kolejka_2))
 
+output_ps = 150
+
 bufor_1 = []
 bufor_2 = []
-b1 = 4
-b2 = 4
+b1 = 1500
+b2 = 1500
 Q1 = 0
 Q2 = 0
-Q1delta = 0.2
-Q2delta = 0.8
+Q1delta = 0.2*output_ps
+Q2delta = 0.8*output_ps
 Q1sent = {}
 Q2sent = {}
 allsent_Q1 = 0
 allsent_Q2 = 0
 sending = 0
-OUTPUT_IN_B = 2000
-output_ps = OUTPUT_IN_B / 1000
-for num in range(0, 1000000):
+
+
+for num in range(0, 100000):
     print("TIME: {} Q1: {:.2f} Q2: {:.2f} sending: {} B1: {} B2: {}".format(num, Q1, Q2, sending, len(bufor_1), len(bufor_2)))
     try:
         if kolejka_1[num] == '1':
@@ -45,7 +47,7 @@ for num in range(0, 1000000):
                 Q1 -= b1
                 allsent_Q1 += 1
                 Q1sent[num] = allsent_Q1 / (allsent_Q1 + allsent_Q2)
-                print(allsent_Q1 / (allsent_Q1 + allsent_Q2))
+                #print(allsent_Q1 / (allsent_Q1 + allsent_Q2))
 
     if len(bufor_2) != 0:
         Q2 += Q2delta
@@ -53,10 +55,10 @@ for num in range(0, 1000000):
             if sending == 0:
                 sending = bufor_2[0]
                 bufor_2.pop(0)
-                Q2 -=b2
+                Q2 -= b2
                 allsent_Q2 += 1
                 Q2sent[num] = allsent_Q2 / (allsent_Q1 + allsent_Q2)
-                print(allsent_Q2 / (allsent_Q1 + allsent_Q2))
+                #print(allsent_Q2 / (allsent_Q1 + allsent_Q2))
     if sending > 0:
         sending-=output_ps
 

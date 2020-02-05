@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-LAMBDA = 13
+LAMBDA = 20
 PAC_NUM_1 = 100000
 PAC_NUM_2 = 100000
 
