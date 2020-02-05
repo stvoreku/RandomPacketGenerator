@@ -122,6 +122,7 @@ ax1.set_xlabel("Czas")
 ax1.set_title('Ilość utraconych Pakietów')
 try:
     ax1.plot(x3, y3, color='tab:red', label = 'stracone pakiety z Zrodla 2')
+    leg = plt.legend()
 except:
     pass
 

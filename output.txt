@@ -4778,10 +4778,10 @@ obecny czas to: 4775 ms
 obecny czas to: 4776 ms  Obsluzono pakiet i: 1.0 j: 792.0 Rozpoczecie obslugi pakietu i: 1.0 j: 793.0
 obecny czas to: 4777 ms
 obecny czas to: 4778 ms
-obecny czas to: 4779 ms  Obsluzono pakiet i: 1.0 j: 793.0 Rozpoczecie obslugi pakietu i: 1.0 j: 794.0
+obecny czas to: 4779 ms  Odrzucono pakiet i: 1.0 j: 793.0 Rozpoczecie obslugi pakietu i: 1.0 j: 794.0
 obecny czas to: 4780 ms
 obecny czas to: 4781 ms
-obecny czas to: 4782 ms  Obsluzono pakiet i: 1.0 j: 794.0 Rozpoczecie obslugi pakietu i: 1.0 j: 795.0
+obecny czas to: 4782 ms  Odrzucono pakiet i: 1.0 j: 794.0 Rozpoczecie obslugi pakietu i: 1.0 j: 795.0
 obecny czas to: 4783 ms
 obecny czas to: 4784 ms
 obecny czas to: 4785 ms  Obsluzono pakiet i: 1.0 j: 795.0 Rozpoczecie obslugi pakietu i: 1.0 j: 796.0
