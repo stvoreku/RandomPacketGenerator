@@ -7,7 +7,7 @@ SIZES = {}
 TAG_I1 = "1.0"
 TAG_I2 = "2.0"
 
-LICZ_PUSTE = True
+LICZ_PUSTE = False
 
 SENT_DICT = {}
 SENT_DICT[TAG_I1] = {}
