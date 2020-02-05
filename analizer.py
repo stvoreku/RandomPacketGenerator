@@ -13,6 +13,10 @@ SENT_DICT = {}
 SENT_DICT[TAG_I1] = {}
 SENT_DICT[TAG_I2] = {}
 
+SENT_RAW_DICT = {}
+SENT_RAW_DICT[TAG_I1] = {}
+SENT_RAW_DICT[TAG_I2] = {}
+
 LOST_DICT = {}
 LOST_DICT[TAG_I1] = {}
 LOST_DICT[TAG_I2] = {}
@@ -67,6 +71,7 @@ with open(FILE, "r") as file:
                                     LAST_PACKETS.append(tag)
                                     #print(LAST_PACKETS)                                      #LAST_SEND daje nam surowe dane ile wyslano. Obecny dzielnik zlicza stosunek pakietów do wszystkich
                                     SENT_DICT[tag][t] = LAST_PACKETS.count(tag) / WINDOW_SIZE #LAST_SEND[tag]
+                                    SENT_RAW_DICT[tag][t] = LAST_SEND[tag]
                         elif cmd == "Odrzucono":
                             for tag in LOST_DICT.keys():
                                 print("LOSS")
@@ -107,10 +112,21 @@ try:
 except:
     pass
 
+try:
+    lists = sorted(SENT_RAW_DICT[TAG_I1].items()) # sorted by key, return a list of tuples
+    rawx1, rawy1 = zip(*lists) # unpack a list of pairs into two tuples
+except:
+    pass
+try:
+    lists = sorted(SENT_RAW_DICT[TAG_I2].items()) # sorted by key, return a list of tuples
+    rawx2, rawy2 = zip(*lists) # unpack a list of pairs into two tuples
+except:
+    pass
+
 
 fig = plt.figure()
 ax1 = fig.add_subplot()
-ax1.set_ylabel('Dane')
+ax1.set_ylabel('Udział w wysłanych pakietach')
 ax1.set_xlabel("Czas")
 ax1.set_title('Ilość wysłanych Danych')
 try:
@@ -119,6 +135,22 @@ try:
     leg = plt.legend()
 except:
     pass
+
+fig1 = plt.figure()
+ax1 = fig1.add_subplot()
+ax1.set_ylabel('Dane')
+ax1.set_xlabel("Czas")
+ax1.set_title('Ilość wysłanych Danych')
+try:
+    ax1.plot(rawx1, rawy1, color='tab:blue', label='Zrodlo 1')
+    ax1.plot(rawx2, rawy2, color='tab:orange', label='Zrodlo 2')
+    leg = plt.legend()
+except:
+    pass
+
+
+
+
 
 
 fig2 = plt.figure()
