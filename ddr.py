@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 
 
-with open("inputL13.txt", "r") as file:
+with open("inputL20.txt", "r") as file:
     out = file.readlines()
     kolejka_1 = out[1].split()
     kolejka_2 = out[2].split()
@@ -25,8 +25,10 @@ allsent_Q1 = 0
 allsent_Q2 = 0
 sending = 0
 
+LAST_PACKETS = [] #to bedzie lista z jakiej kolejki jest ostatnie 10 pakietów
+WINDOW_SIZE = 100 #ile ostatnich pakietow jest liczonych
 
-for num in range(0, 100000):
+for num in range(0, 2000000):
     print("TIME: {} Q1: {:.2f} Q2: {:.2f} sending: {} B1: {} B2: {}".format(num, Q1, Q2, sending, len(bufor_1), len(bufor_2)))
     try:
         if kolejka_1[num] == '1':
@@ -46,8 +48,11 @@ for num in range(0, 100000):
                 bufor_1.pop(0)
                 Q1 -= b1
                 allsent_Q1 += 1
-                Q1sent[num] = allsent_Q1 / (allsent_Q1 + allsent_Q2)
-                #print(allsent_Q1 / (allsent_Q1 + allsent_Q2))
+                #Q1sent[num] = allsent_Q1 / (allsent_Q1 + allsent_Q2)
+                if len(LAST_PACKETS) >= WINDOW_SIZE:
+                    LAST_PACKETS.pop(0)
+                LAST_PACKETS.append('1')
+                Q1sent[num] = len(bufor_1)  #LAST_PACKETS.count('1')/WINDOW_SIZE
 
     if len(bufor_2) != 0:
         Q2 += Q2delta
@@ -57,8 +62,12 @@ for num in range(0, 100000):
                 bufor_2.pop(0)
                 Q2 -= b2
                 allsent_Q2 += 1
-                Q2sent[num] = allsent_Q2 / (allsent_Q1 + allsent_Q2)
-                #print(allsent_Q2 / (allsent_Q1 + allsent_Q2))
+                #Q2sent[num] = allsent_Q2 / (allsent_Q1 + allsent_Q2)
+                if len(LAST_PACKETS) >= WINDOW_SIZE:
+                    LAST_PACKETS.pop(0)
+                LAST_PACKETS.append('2')
+                Q2sent[num] = len(bufor_2)  #LAST_PACKETS.count('2')/WINDOW_SIZE
+
     if sending > 0:
         sending-=output_ps
 
